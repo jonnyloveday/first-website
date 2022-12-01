@@ -1,0 +1,235 @@
+/*
+galaxy mode not active till other options have been looked at 
+fades to black, galaxy mode fades in
+
+wildWest to appear after galaxy has been selected
+    font-family: 'Rye', cursive;
+    text-shadow: 0.25vh 0.25vh sandybrown;
+    color: peru;
+*/
+* {
+    box-sizing: border-box;
+    /* border: 1px greenyellow solid; */
+    /* font-family: 'Press Start 2P'; */
+
+}
+ 
+
+body {
+    padding-top: 7.5%;
+    width: 80%;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    /* background-image: url(west.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width:110%;
+    margin-left: -15%;
+    font-size: 10vh;
+    text-align: center;
+    background-color: white;
+    z-index: 10;
+}
+
+footer {
+    bottom: 0px;
+    position: fixed;
+    text-align: center;
+    width:110%;
+    margin-left: -15%;
+    background-color: white;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 5vh;
+}
+
+h2 { 
+    font-size: 3vh;
+}
+
+p {
+    font-size: 2.5vh;
+    padding: 5%;
+}
+
+
+#colourButton-container {
+    height: 6vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50%;
+    width: 72.75%;
+    margin: auto;
+}
+
+#colourButton-container button {
+    height: 75%;
+    width: 12%;
+    margin: auto;
+}
+
+#redMode,
+#galaxyMode,
+#wildWest {
+    display: none;
+}
+
+
+#lightMode {
+    background-color: white;
+}
+
+#darkMode {
+    background-color: black;
+    color: blue;
+    border: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+#darkMode:hover {
+    border: 3px gold solid;
+    color: greenyellow;
+}
+
+#redMode {
+    background-color: maroon;
+    color: red;
+    border-radius: 15px;
+    border: 0;
+}
+#redMode:hover {
+    background-color: red;
+    color: maroon;
+}
+
+#galaxyMode {
+    background-image: url(BG/spacebackground.png);
+    font-family: Orbitron;
+    color: rgba(255, 255, 255, 0.3);
+    border: 0;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+}
+
+#galaxyMode:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 20px rgba(145, 102, 182, .45);
+}
+
+#wildWest {
+    font-family: Rye;
+    background-color: blanchedalmond;
+
+}
+
+
+
+
+
+
+#main {
+    padding-top: 3vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    padding: 5%;
+}
+
+#space1,
+#space2,
+#space3,
+#space4 {
+    background: white;
+}
+
+
+
+.section-title {
+    text-align: center;
+    font-size: 5vh;
+    line-height: 1;
+}
+.split {
+    display: flex;
+    gap: 2.5vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.split > * {
+    flex-basis: 30%;
+}
+
+.featured-project {
+    position: relative;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+    transition: transform 250ms ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.2;
+    z-index: 2;
+    transition: opacity 250ms ease-in-out;
+}
+    
+.featured-project:hover .project-details, .featured-project:focus .featured-project {
+    opacity: 1;
+}
+    
+    
+.featured-project:hover, .featured-project:focus {
+    opacity: .8;
+}
+
+.project-details {
+    opacity: 0;
+    transition: opacity 250ms linear;
+    text-align: center;
+}
+
+/* space3 mastery photo grid */
+
+#boat1,
+#boat2,
+#boat3,
+#boat4 {
+    background-color: white;
+    padding: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+    border-radius: 5%;
+  }
+
+.picture-grid {
+    max-width: 100%;
+    display: grid;
+    column-gap: 22px;
+    grid-template-columns: minmax(10%, 1fr) minmax(10%, 1fr);
+  }
+
+.picture-grid-img {
+    display: inline-block;
+    justify-content: center;
+}
+img.picture-grid-img {
+    border-radius:50%;
+}
+
+img.project-img {
+    border-radius: 5%;
+}
+
